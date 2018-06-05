@@ -20,8 +20,6 @@ gulp.task('bs', () => {
     });
 });
 
-
-
 gulp.task('default', ['bs', 'styles'], () => {
     gulp.watch('./styles/**/*.scss', ['styles']);
     gulp.watch('./styles/styles.css', reload);

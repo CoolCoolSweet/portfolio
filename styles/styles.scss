@@ -1,5 +1,122 @@
+// Variables
+
+$primary-color: #fff;
+$off-color: #000;
+
+// Imports
+
 @import "setup";
+@import "typography";
+
+// Global
 
 body {
-    background: mediumslateblue;
+	color: $primary-color;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+// Header
+
+#home {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/bw-splash.jpg);
+	// background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/bw-splash.jpg);
+	background-size: cover;
+	background-position: center;
+
+	.wrapper {
+		height: 100vh;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	nav {
+		position: absolute;
+		width: 100%;
+		padding: inherit; /* Solve the issue of absolute positioning not respecting padding. */
+		top: 32px;
+		left: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.logo-container, ul {
+		display: flex;
+		align-items: center;
+	}
+
+	li, .name {
+		margin-left: 25px;
+	}
+
+	.first-name {
+		font-weight: 300;
+	}
+	.last-name {
+		font-weight: 700;
+	}
+
+	.logo {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid $primary-color;
+		border-radius: 50%;
+	}
+
+	h2 {
+		line-height: 100px;	
+	}
+
+}
+
+// About
+
+#about {
+
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.title-container {
+		width: 100%;
+		margin: 50px 0;
+		padding: 15px 0 15px 25px;
+		border-left: 3px solid $off-color;
+	}
+
+	.image-container {
+		width: 50%;
+
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.about-text {
+		width: 50%;
+		padding: 40px
+	}
+
+	h4 {
+		font-family: Lato;
+color: rgba(75, 78, 83, 1);
+font-size: 24px;/* Approximation due to font substitution */
+font-weight: 700;
+	}
 }
