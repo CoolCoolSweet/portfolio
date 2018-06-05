@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:300,400,700" rel="stylesheet">
-    <title>SM</title>
+	<title>SM</title>
+	<link rel="stylesheet" href="./styles/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -22,8 +23,8 @@
 				<ul>
 					<li><a href="#header">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
 					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contacts">Contact</a></li>
 				</ul>
 			</nav>
@@ -37,12 +38,93 @@
 			<div class="image-container">
 				<img src="./images/bw-headshot.png" alt="Sean">
 			</div>
-			<div class="about-text">
-				<h4>Sean McNeil</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolores dolorem. Accusantium voluptates consectetur eaque accusamus officiis, incidunt tempore, molestias, debitis ratione ad at pariatur. Est repellendus quibusdam accusamus aspernatur ipsa quaerat voluptate sequi harum odit pariatur, eligendi voluptatem nisi quos? Alias omnis quis velit tempore et sequi aliquid deleniti?</p>
+			<div class="about-text-container">
+				<h4 class="about-text-title">Sean McNeil</h4>
+				<p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolores dolorem. Accusantium voluptates consectetur eaque accusamus officiis, incidunt tempore, molestias, debitis ratione ad at pariatur.</p>
+				<p class="about-text">Est repellendus quibusdam accusamus aspernatur ipsa quaerat voluptate sequi harum odit pariatur, eligendi voluptatem nisi quos? Alias omnis quis velit tempore et sequi aliquid deleniti?</p>
 			</div>
 		</div>
 	</section>
+	<section id="skills">
+		<div class="wrapper">
+			<div class="title-container">
+				<h3>Skills</h3>
+			</div>
+			<div class="icon-container"><i class="devicon-react-original-wordmark"></i></div>
+			<div class="icon-container"><i class="devicon-html5-plain-wordmark"></i></div>
+			<div class="icon-container"><i class="devicon-css3-plain-wordmark"></i></div>
+			<div class="icon-container"><i class="devicon-sass-original"></i></div>
+			<div class="icon-container"><i class="devicon-javascript-plain"></i></div>
+			<div class="icon-container"><i class="devicon-jquery-plain-wordmark"></i></div>
+			<div class="icon-container"><i class="devicon-gulp-plain"></i></div>
+			<div class="icon-container"><i class="devicon-git-plain-wordmark"></i></div>
+			<div class="icon-container"><i class="devicon-github-plain-wordmark"></i></div>
+			<div class="icon-container"><img src="./images/firebase-white.png" alt=""></div>
+		</div>
+	</section>
+	<!-- <section id="portfolio">
+		<div class="wrapper">
+			<div class="title-container">
+				<h3>Portfolio</h3>
+			</div>
+			<div class="project-container left">
+				<img src="./images/chat-bw.png" alt="Chat">
+				<h4>Chat</h4>
+				<p class="techs-used">React, Firebase, JavaScript, CSS, HTML</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit ea rerum sint sapiente facere incidunt at saepe, debitis nam labore modi fugit totam. Doloribus.</p>
+				<a href="http://seanmcneil.tech/chat">See it live >></a>
+			</div>
+			<div class="project-container middle">
+				<img src="./images/nba-bw.png" alt="Chat">
+				<h4>NBA Stats</h4>
+				<p class="techs-used">AJAX, JavaScript, CSS, HTML</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit ea rerum sint sapiente facere incidunt at saepe, debitis nam labore modi fugit totam. Doloribus.</p>
+				<a href="http://seanmcneil.tech/nba_player_cards">See it live >></a>
+			</div>
+			<div class="project-container right">
+				<img src="./images/simon-bw.png" alt="Chat">
+				<h4>Simon</h4>
+				<p class="techs-used">JavaScript, CSS, HTML</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit ea rerum sint sapiente facere incidunt at saepe, debitis nam labore modi fugit totam. Doloribus.</p>
+				<a href="http://seanmcneil.tech/simon">See it live >></a>
+			</div>
+		</div>
+	</section> -->
+		<section id="portfolio">
+			<div class="wrapper">
+				<div class="title-container">
+					<h3>Portfolio</h3>
+				</div>
+				<div class="images">
+					<img src="./images/chat-bw.png" alt="Chat">
+					<img src="./images/nba-bw.png" alt="Chat">
+					<img src="./images/simon-bw.png" alt="Chat">
+				</div>
+				<div class="titles">
+					<div class="left"><h4>Chat</h4></div>
+					<div class="middle"><h4>NBA Stats</h4></div>
+					<div class="right"><h4>Simon</h4></div>
+				</div>
+				<div class="techs">
+					<p class="techs-used left">React, Firebase, JavaScript, CSS, HTML</p>
+					<p class="techs-used middle">AJAX, JavaScript, CSS, HTML</p>
+					<p class="techs-used right">JavaScript, CSS, HTML</p>
+				</div>
+				<div class="text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit ea rerum sint sapiente facere incidunt at saepe, debitis nam labore modi fugit totam. Doloribus.</p>
+					<p class="middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit ea rerum sint sapiente facere incidunt at saepe, debitis nam labore modi fugit totam. Doloribus.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit ea rerum sint sapiente facere incidunt at saepe, debitis nam labore modi fugit totam. Doloribus.</p>
+				</div>
+				<div class="links">
+					<a href="http://seanmcneil.tech/chat">See it live >></a>
+					<a class="middle" href="http://seanmcneil.tech/nba_player_cards">See it live >></a>
+					<a href="http://seanmcneil.tech/simon">See it live >></a>
+				</div>
+
+			</div>
+		</section>
+	
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
     <script src="./scripts/script.js"></script>
