@@ -173,80 +173,54 @@ body {
 
 // Portfolio
 
-// #portfolio {
-// 	.wrapper {
-// 		display: flex;
-// 		justify-content: center;
-// 		flex-wrap: wrap;
-// 		padding: 50px 20px 80px 20px;
-// 	}	
-	
-// 	.title-container {
-// 		@extend %title-container-style;
-// 		border-left: 3px solid $off-color;
-// 	}
-
-// 	img {
-// 		max-width: 100%;
-// 	}
-
-// 	img:first-of-type {
-// 		border: 1px solid black
-// 	}
-
-// 	.project-container {
-// 		width: calc(100%/3 - 20px);
-// 	}
-
-// 	.middle {
-// 		margin: 0 30px;
-// 	}
-
-// 	h4 {
-// 		margin: 30px 0 10px 0;
-// 	}
-
-// 	.techs-used {
-// 		margin-bottom: 30px;
-// 	}
-// }
-
 #portfolio {
 	.wrapper {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		padding: 50px 20px 80px 20px;
+	}	
+	
+	.title-container {
+		@extend %title-container-style;
+		border-left: 3px solid $off-color;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+
+	img:first-of-type {
+		border: 1px solid black;
+	}
+
+	.project-container {
+		width: calc(100%/3 - 20px);
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+
 		& > * {
 			width: 100%;
 		}
 	}
-	
-	.images, .titles, .techs, .text, .links {
-		display: flex;
-		justify-content: center;
+
+	.middle {
+		margin: 0 30px;
 	}
 
-	.titles .middle, .techs .middle, .text .middle, .links .middle {
-		margin: 0 20px;
+	h4 {
+		margin: 25px 0 10px 0;
 	}
 
-	.titles div, img, .techs p, .text p, .links a {
-		width: 100%;
+	.techs-used {
+		margin-bottom: 25px;
 	}
 
-	.links {
+	a {
 		margin-top: 25px;
+		display: block;
 		text-align: right;
-	}
-
-	img {
-		&:first-of-type {
-			border: 1px solid black;
-		}
-
-		&:nth-of-type(2) {
-			margin: 0 20px;
-		}
 	}
 }
