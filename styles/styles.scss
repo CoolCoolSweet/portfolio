@@ -176,7 +176,7 @@ body {
 #portfolio {
 	.wrapper {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 50px 20px 80px 20px;
 	}	
@@ -197,7 +197,7 @@ body {
 	}
 
 	.project-container {
-		width: calc(100%/3 - 20px);
+		width: calc(100% / 3 - 20px);
 		display: flex;
 		flex-wrap: wrap;
 		align-content: space-between;
@@ -208,7 +208,7 @@ body {
 	}
 
 	.middle {
-		margin: 0 30px;
+		// margin: 0 30px;
 	}
 
 	h4 {
@@ -232,6 +232,7 @@ body {
 	.wrapper {
 		padding: 50px 20px 80px 20px;
 		display: flex;
+		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 
@@ -262,10 +263,6 @@ body {
 
 	img {
 		max-width: 50px;
-	}
-
-	.middle {
-		margin: 0 30px;
 	}
 
 	form {
