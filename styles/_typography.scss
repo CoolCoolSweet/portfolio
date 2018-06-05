@@ -81,3 +81,23 @@
 		}
 
 	}
+
+	#contact {
+		input, textarea {
+		color: $primary-color;
+		font-family: 'Open Sans', sans-serif;
+		}
+		
+		h3, h4 {
+			text-transform: uppercase;
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
+		}
+
+		input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+			color: $primary-color;
+			opacity: 0.5; /* Firefox */
+			font-family: 'Open Sans', sans-serif;
+		}
+
+	}
