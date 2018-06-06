@@ -29,13 +29,13 @@ body {
 }
 
 .line {
-border-bottom: 4px solid $primary-color;
-width: 35px;
-margin-bottom: 6px;
+	border-bottom: 4px solid $primary-color;
+	width: 35px;
+	margin-bottom: 6px;
 }
 
 .line:last-child {
-margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 // Hover Effects
@@ -59,6 +59,10 @@ a:hover:before {
 	transform:  scaleX(1);
 }
 
+a:active {
+	opacity: 0.5;
+}
+
 #contact input[type="submit"]:hover {
 	cursor: pointer;
 	border-width: 2px;
@@ -66,6 +70,11 @@ a:hover:before {
 }
 
 #contact textarea:hover, #contact input[type="text"]:hover {
+	border-width: 2px;
+}
+
+#contact textarea:focus, #contact input[type="text"]:focus {
+	outline: none;
 	border-width: 2px;
 }
 
