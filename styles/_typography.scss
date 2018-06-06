@@ -40,6 +40,11 @@
 		.logo-container {
 			font-family: 'Lato', sans-serif;
 		}
+
+		ul {
+			font-weight: 700;
+			text-shadow: 2px 2px 0px $off-color;
+		}
 	}
 
 	// About
@@ -55,6 +60,10 @@
 		h4 {
 			font-family: 'Lato', sans-serif;
 			font-weight: 700;
+		}
+
+		p {
+			line-height: 1.5;
 		}
 	}
 
@@ -85,6 +94,10 @@
 			font-size: 12px;
 		}
 
+		p {
+			line-height: 1.5;
+		}
+
 	}
 
 	#contact {
@@ -111,6 +124,7 @@
 		
 		a {
 			font-weight: 300;
+			line-height: 1.5;
 		}
 
 	}

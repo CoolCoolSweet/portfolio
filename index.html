@@ -27,6 +27,11 @@
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contacts">Contact</a></li>
 				</ul>
+				<div href="#" class="hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -50,16 +55,18 @@
 			<div class="title-container">
 				<h3>Skills</h3>
 			</div>
-			<div class="icon-container"><i class="devicon-react-original-wordmark"></i></div>
-			<div class="icon-container"><i class="devicon-html5-plain-wordmark"></i></div>
-			<div class="icon-container"><i class="devicon-css3-plain-wordmark"></i></div>
-			<div class="icon-container"><i class="devicon-sass-original"></i></div>
+			<div class="icon-container"><i class="devicon-html5-plain"></i></div>
+			<div class="icon-container"><i class="devicon-css3-plain"></i></div>
 			<div class="icon-container"><i class="devicon-javascript-plain"></i></div>
-			<div class="icon-container"><i class="devicon-jquery-plain-wordmark"></i></div>
+			<div class="icon-container"><i class="devicon-react-original"></i></div>
+			<div class="icon-container"><i class="devicon-jquery-plain"></i></div>
+			<div class="icon-container"><i class="devicon-sass-original"></i></div>
 			<div class="icon-container"><i class="devicon-gulp-plain"></i></div>
-			<div class="icon-container"><i class="devicon-git-plain-wordmark"></i></div>
-			<div class="icon-container"><i class="devicon-github-plain-wordmark"></i></div>
+			<div class="icon-container"><i class="devicon-git-plain"></i></div>
+			<div class="icon-container"><i class="devicon-github-plain"></i></div>
 			<div class="icon-container"><img src="./images/firebase-white.png" alt=""></div>
+			<div class="icon-container"><i class="devicon-firefox-plain"></i></div>
+			<div class="icon-container"><i class="devicon-chrome-plain"></i></div>
 		</div>
 	</section>
 	<section id="portfolio">
@@ -74,7 +81,7 @@
 					<p class="techs-used">React, Firebase, JavaScript, CSS, HTML</p>
 					<p>Chat is a small chatroom built with React and Firebase. Using Firebase authentication, users can log in anonymously to begin their chat experience. Make some rooms and start chatting with your friends (including inline private messaging)!</p>
 				</div>
-				<a href="http://seanmcneil.tech/chat">See it live >></a>
+				<div class="link-container"><a href="http://seanmcneil.tech/chat">See Chat live >></a></div>
 			</div>
 			<div class="project-container middle">
 				<div class="top-container">
@@ -83,7 +90,7 @@
 					<p class="techs-used">AJAX, JavaScript, CSS, HTML</p>
 					<p>NBA Stats is an NBA player comparison tool to compare the stats of your favourite NBA players. Using JavaScript and AJAX calls to retrieve the data, users can look up stats on players. Choose two players who played in the NBA at any point and then compre their career stats, or specific season stats against each other!</p>
 				</div>
-				<a href="http://seanmcneil.tech/nba_player_cards">See it live >></a>
+				<div class="link-container"><a href="http://seanmcneil.tech/nba_player_cards">See NBA Stats live >></a></div>
 			</div>
 			<div class="project-container right">
 				<div class="top-container">
@@ -92,7 +99,7 @@
 					<p class="techs-used">JavaScript, CSS, HTML</p>
 					<p class="text">Simon is a replica of the memory game based off of "Simon Says". Built using JavaScript and jQuery, this is an example of function over form. The goal of the game is to repeat back the pattern of flashing lights to get the highest score you can. For a real challenge try reverse mode or different speeds!</p>
 				</div>
-				<a href="http://seanmcneil.tech/simon">See it live >></a>
+				<div class="link-container"><a href="http://seanmcneil.tech/simon">See Simon live >></a></div>
 			</div>
 		</div>
 	</section>
@@ -100,15 +107,6 @@
 		<div class="wrapper">
 			<div class="title-container">
 				<h3>Contact</h3>
-			</div>
-			<div class="left">
-				<div class="image-container">
-					<img src="./images/Forma1.png" alt="">
-				</div>
-				<div class="text-container">
-					<h5>Location</h5>
-					<p>Toronto, ON</p>
-				</div>
 			</div>
 			<div class="middle">
 				<div class="image-container">
@@ -119,21 +117,12 @@
 					<a href="mailto:sean@seanmcneil.ca" target="_top">sean@seanmcneil.ca</a>
 				</div>
 			</div>
-			<div class="right">
-				<div class="image-container">
-					<img src="./images/Forma3.png" alt="">
-				</div>
-				<div class="text-container">
-					<h5>Phone</h5>
-					<p>123 456 7890</p>
-				</div>
-			</div>
-			<form action="POST">
-				<textarea name="" id="form-text"  placeholder="Enter your message..."></textarea>
-				<div class="inputs">
-					<input type="text" placeholder="Name...">
-					<input type="text" placeholder="Email...">
-					<input type="submit" value="Send">
+			<form method="POST" action="https://formspree.io/sean@seanmcneil.ca">
+				<textarea name="textarea" id="form-text"  placeholder="Enter your message..."></textarea>
+				<div name="div" class="inputs">
+					<input name="name" type="text" placeholder="Name...">
+					<input name="email" type="text" placeholder="Email...">
+					<input name="submit" type="submit" value="Send">
 				</div>
 			</form>
 		</div>

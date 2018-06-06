@@ -1,0 +1,133 @@
+@media (max-width: 850px) {
+    #skills {
+        i {
+            font-size: 90px;
+        }
+    }
+}
+
+@media (max-width: 725px) {
+
+    #portfolio .project-container {
+        width: 100%;
+    }
+
+    #portfolio .middle {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #skills {
+        i {
+            font-size: 80px;
+        }
+    }
+
+}
+
+@media (max-width: 665px) {
+    #home {
+        .name span {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 615px) {
+    #about {
+        .title-container {
+            margin-bottom: 25px;
+        }
+
+        .image-container {
+            width: 50%;
+            margin: 0 auto 25px auto;
+        }
+        
+        .about-text-container {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    #skills {
+        i {
+            font-size: 80px;
+        }
+        .icon-container {
+            width: 25%;
+        }
+    }
+
+    #home {
+        ul {
+            display: none;
+        }
+        li {
+            margin-left: 0;
+        }
+        .name span {
+            display: inline-block;
+        }
+
+        .wrapper {
+            align-items: flex-start;
+        }
+
+        h2 {
+            line-height: 1;
+            margin-top: 0;
+        }
+
+        h2:first-of-type {
+            margin-top: 25px;
+        }
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #contact {
+        
+        form {
+            flex-wrap: wrap;
+        }
+
+        textarea, .inputs {
+            width: 100%;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    #skills {
+        .icon-container {
+            width: calc(100%/3);
+        }
+    }
+}
+
+@media (max-height: 550px) {
+    #home {
+        .wrapper {
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 60px
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
