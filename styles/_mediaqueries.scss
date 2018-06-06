@@ -26,14 +26,6 @@
 }
 
 @media (max-width: 665px) {
-    #home {
-        .name span {
-            display: block;
-        }
-    }
-}
-
-@media (max-width: 615px) {
     #about {
         .title-container {
             margin-bottom: 25px;
@@ -61,8 +53,18 @@
 
     #home {
         ul {
-            display: none;
-        }
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			right: 0;
+			background: $off-color;
+			padding: inherit;
+			display: flex;
+			justify-content: space-between;
+			transform: translateX(100%);
+		}
+
         li {
             margin-left: 0;
         }

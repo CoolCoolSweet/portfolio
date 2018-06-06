@@ -1,4 +1,4 @@
-$( function() {
+$(window).on("load", function() {
 
 	// Variables
 	let splashText = (window.innerWidth < 600 && window.innerHeight > 449) ? "Sean~ McNeil. Web Developer" : "Sean McNeil. Web Developer";
@@ -33,15 +33,24 @@ $( function() {
 		}, splashTypeTiming);
 	};
 	
+
+	// Main
+	document.getElementById("form").reset(); 
+	
 	splashTyping();
 
 	$("#home ul").on("click", "a", function (e) {
 		e.preventDefault();
+		$("#home ul").removeClass("hamburger-toggle");
 		let clicked = $(this).text().toLowerCase();
 		document.querySelector(`#${clicked}`).scrollIntoView({
 			behavior: 'smooth',
 			block: "start"
 		});
+	});
+
+	$("#home .hamburger").on("click", function (e) {
+		$("#home ul").addClass("hamburger-toggle");
 	});
 
 });

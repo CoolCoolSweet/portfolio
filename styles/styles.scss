@@ -63,8 +63,14 @@ a:hover:before {
 	transform:  scaleX(1);
 }
 
-input[type="submit"]:hover {
+#contact input[type="submit"]:hover {
 	cursor: pointer;
+	border-width: 2px;
+	font-weight: 400;
+}
+
+#contact textarea:hover, #contact input[type="text"]:hover {
+	border-width: 2px;
 }
 
 // Extends
@@ -91,6 +97,7 @@ input[type="submit"]:hover {
 	}
 
 	nav {
+		overflow: hidden;
 		position: absolute;
 		width: 100%;
 		padding: inherit; /* Solve the issue of absolute positioning not respecting padding. */
@@ -133,6 +140,10 @@ input[type="submit"]:hover {
 		margin-top: 25px;	
 	}
 
+	ul {
+		// transition: transform 2s ease;
+	}
+
 }
 
 // About
@@ -173,6 +184,10 @@ input[type="submit"]:hover {
 
 	.about-text {
 		margin-top: 25px;
+
+		span {
+			font-weight: 400;
+		}
 	}
 }
 
@@ -199,7 +214,8 @@ input[type="submit"]:hover {
 	}
 
 	.icon-container {
-		width: calc(100%/6);
+		// width: calc(100%/6);
+		width: calc((100% - 1px)/6);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -357,6 +373,20 @@ input[type="submit"]:hover {
 		text-transform: uppercase;
 	}
 
+	.social-icons {
+		width: 50%;
+		margin-top: 25px;
+		font-size: 40px;
+		margin: 25px auto 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
 
 @import "mediaqueries";
+
+#home .hamburger-toggle {
+	transition: transform 1s ease;
+	transform: translateX(0);
+}
