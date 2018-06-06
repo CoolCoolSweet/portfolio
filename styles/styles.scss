@@ -13,10 +13,6 @@ $off-color: #323232;
 body {
 	color: $primary-color;
 	position: relative;
-	background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url(../images/bw-splash.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
 	min-width: 320px; /* Minimum width */
 }
 
@@ -84,6 +80,10 @@ a:hover:before {
 // Header
 
 #home {
+	background: linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5)), url(../images/bw-splash.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 
 	.wrapper {
 		height: 100vh;
