@@ -26,6 +26,7 @@ body {
 .hamburger {
     cursor: pointer;
 	display: none;
+	padding: 20px;
 }
 
 .line {
@@ -396,6 +397,6 @@ a:active {
 @import "mediaqueries";
 
 #home .hamburger-toggle {
-	transition: transform 1s ease;
+	transition: transform 0.3s ease;
 	transform: translateX(0);
 }
