@@ -1,7 +1,7 @@
 // Variables
 
 $primary-color: #fff;
-$off-color: #000;
+$off-color: #323232;
 
 // Imports
 
@@ -123,14 +123,7 @@ body {
 	}
 
 	.about-text {
-		margin-top: 35px;
-	}
-
-	h4 {
-		font-family: Lato;
-		color: rgba(75, 78, 83, 1);
-		font-size: 24px;/* Approximation due to font substitution */
-		font-weight: 700;
+		margin-top: 25px;
 	}
 }
 
@@ -205,10 +198,6 @@ body {
 		& > * {
 			width: 100%;
 		}
-	}
-
-	.middle {
-		// margin: 0 30px;
 	}
 
 	h4 {

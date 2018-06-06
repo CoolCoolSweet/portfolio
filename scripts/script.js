@@ -35,7 +35,8 @@ $( function() {
 		e.preventDefault();
 		let clicked = $(this).text().toLowerCase();
 		document.querySelector(`#${clicked}`).scrollIntoView({
-			behavior: 'smooth'
+			behavior: 'smooth',
+			block: "start"
 		});
 	});
 

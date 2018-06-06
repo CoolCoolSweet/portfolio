@@ -51,6 +51,11 @@
 			font-family: 'Lato', sans-serif;
 			font-weight: 300;
 		}
+
+		h4 {
+			font-family: 'Lato', sans-serif;
+			font-weight: 700;
+		}
 	}
 
 	// Skills
@@ -88,6 +93,10 @@
 		font-family: 'Open Sans', sans-serif;
 		}
 		
+		textarea {
+			resize: none;
+		}
+
 		h3, h4 {
 			text-transform: uppercase;
 			font-family: 'Lato', sans-serif;
@@ -98,6 +107,10 @@
 			color: $primary-color;
 			opacity: 0.5; /* Firefox */
 			font-family: 'Open Sans', sans-serif;
+		}
+		
+		a {
+			font-weight: 300;
 		}
 
 	}
