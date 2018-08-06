@@ -7,13 +7,8 @@
 }
 
 @media (max-width: 725px) {
-
     #portfolio .project-container {
         width: 100%;
-    }
-
-    #portfolio .middle {
-        margin-top: 25px;
         margin-bottom: 25px;
     }
 
@@ -103,10 +98,7 @@
         textarea {
             height: 150px;
         }
-
-        input[type="submit"] {
-            margin-bottom: 0;
-        }
+        
     }
 }
 
